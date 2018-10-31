@@ -44,7 +44,7 @@ public class Lancamento implements Serializable {
 	@Column(name="data_atualizacao", nullable=false)
 	private Date dataAtualizacao;
 	@Enumerated(EnumType.STRING)
-	@Column(name="descricao", nullable=false)
+	@Column(name="tipo", nullable=false)
 	private TipoEnum tipo;
 	@ManyToOne(fetch = FetchType.EAGER)
 	private Funcionario funcionario;
